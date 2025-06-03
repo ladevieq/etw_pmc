@@ -1,0 +1,6 @@
+/Zi
+/Od
+/Iinclude
+/Fd:%BUILD_DIR%\main.pdb
+/Fo:%BUILD_DIR%\main.obj
+/link /SUBSYSTEM:CONSOLE /OUT:%BUILD_DIR%\main.exe user32.lib advapi32.lib libucrtd.lib

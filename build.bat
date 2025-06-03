@@ -12,4 +12,4 @@ mkdir build
 :: set L_FLAGS=/WX /SUBSYSTEM:CONSOLE /stack:0x100000,100000
 
 :: cl /Fd:%BUILD_DIR%\main.pdb %C_FLAGS% src\main.c /link %L_FLAGS% user32.lib advapi32.lib libucrtd.lib
-cl.exe /Zi /Od /Fd:%BUILD_DIR%\main.pdb /Fo:%BUILD_DIR%\main.obj src\main.c /link /SUBSYSTEM:CONSOLE /OUT:%BUILD_DIR%\main.exe user32.lib advapi32.lib libucrtd.lib
+cl.exe /Zi /Od /Iinclude /Fd:%BUILD_DIR%\main.pdb /Fo:%BUILD_DIR%\main.obj src\main.c /link /SUBSYSTEM:CONSOLE /OUT:%BUILD_DIR%\main.exe user32.lib advapi32.lib libucrtd.lib
